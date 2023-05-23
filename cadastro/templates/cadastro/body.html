@@ -1,0 +1,25 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} titulo {% endblock %}</title>
+    {% block css_files %}{% endblock  %}
+</head>
+<body>
+    <form action="{% block forms_action %}{% endblock  %}" class="content-block">
+        <div class="nome">
+            <label for="name-input">{% block nome %}{% endblock  %}</label>
+            <input type="text" class="name-input" name="name-input"><br>
+        </div>
+        <div class="senha">
+            <label for="senha-input">{% block senha %}{% endblock  %}</label>
+            <input type="password" class="senha-input" name="senha-input"><br>
+        </div>
+        <div class="entrar">
+            <button class="submit-btn">{% block submit %}{% endblock  %}</button>
+            <p class="texto-rodape">{% block texto_rodape %}{% endblock  %} <a href="{% block link_rodape %}{% endblock  %}" class="texto-link"> {% block texto_link %}{% endblock  %} </a></p>
+        </div>
+    </form>
+</body>
+</html>

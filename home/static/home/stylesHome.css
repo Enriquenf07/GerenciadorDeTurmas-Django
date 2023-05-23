@@ -1,0 +1,73 @@
+.navbar{
+    border-bottom: 1px solid #FDECE7;
+}
+
+.bg-fundo{
+    background-color: #251612;
+}
+
+.btn-purple{
+    background-color: #6E40C9;
+    color: #FDECE7;
+}
+
+.btn-purple:hover{
+    background-color: #6E40C9;
+    color: #FDECE7;
+}
+
+.cor-texto{
+    color: #FDECE7;
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+}
+
+.lista-texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.icon-li{
+    font-size: 1.2rem;
+}
+
+.font-button{
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1200px){
+    .nav-content{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-item{
+        border: 1px solid #FDECE7;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    .nav-cadastrar{
+        background-color: #6E40C9;
+    }
+    .cont{
+        margin-top: 5rem !important;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+
+    .lista-texto{
+        font-size: 1.4rem;
+    }
+
+    .icon-li{
+        font-size: 1.5rem;
+    }
+
+    .font-button{
+        margin-top: 1rem;
+    }
+    
+}

@@ -1,0 +1,82 @@
+@import url('httpsL//fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: ghostwhite;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.content-block{
+    height: 60vh;
+    width: 400px;
+    display: grid;
+    grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr;
+    grid-template-areas: 
+    "nome"
+    "senha"
+    "entrar";
+}
+
+.nome{
+    grid-area: nome;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.senha{
+    grid-area: senha;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.entrar{
+    grid-area: entrar;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.name-input{
+    height: 20%;
+}
+
+.senha-input{
+    height: 20%;
+}
+
+.submit-btn{
+    height: 20%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.texto-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-link{
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 410px) {
+    .content-block{
+        width: 80%;
+    }
+  } 
