@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sucesso</title>
+    <link rel="stylesheet" href="{% static 'cadastro/bodyStyles.css' %}">
+    <link rel="stylesheet" href="{% static 'cadastro/sucessoStyles.css' %}">
+</head>
+<body>
+    <p>Cadastro feito com sucesso!</p>
+    <p>para continuar acesse o menu de login</p>
+    <a href="{% url 'login' %}">Login</a>
+</body>
+</html>

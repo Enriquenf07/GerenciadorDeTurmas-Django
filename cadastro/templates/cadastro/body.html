@@ -7,14 +7,19 @@
     {% block css_files %}{% endblock  %}
 </head>
 <body>
-    <form action="{% block forms_action %}{% endblock  %}" class="content-block">
-        <div class="nome">
+    <p style='color: red'>{% block errorblock1 %}{% endblock  %}</p>
+    <form method="POST" class="content-block">
+        {% csrf_token %}
+        <div class="nome{% if form.nome.errors %} error{% endif %}">
             <label for="name-input">{% block nome %}{% endblock  %}</label>
-            <input type="text" class="name-input" name="name-input"><br>
+            <input type="text" class="name-input" name="nome"><br>
+            {% block nome_error %}{% endblock  %}
         </div>
-        <div class="senha">
+        <div class="senha{% if form.nome.errors %} error {% endif %}">
             <label for="senha-input">{% block senha %}{% endblock  %}</label>
-            <input type="password" class="senha-input" name="senha-input"><br>
+            <input type="password" class="senha-input" name="senha"><br>
+            {% block senha_error %}{% endblock senha_error %}
+            
         </div>
         <div class="entrar">
             <button class="submit-btn">{% block submit %}{% endblock  %}</button>

@@ -33,6 +33,7 @@ body{
     justify-content: end;
 }
 
+
 .senha{
     grid-area: senha;
     display: flex;
@@ -40,6 +41,7 @@ body{
     justify-content: center;
 
 }
+
 
 .entrar{
     grid-area: entrar;
@@ -52,6 +54,7 @@ body{
 .name-input{
     height: 20%;
 }
+
 
 .senha-input{
     height: 20%;
@@ -73,6 +76,16 @@ body{
 
 .texto-link{
     padding-left: 5px;
+}
+
+
+ul.errorlist{
+    display: flex;
+    justify-content: center;
+    color: red; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width: 410px) {
